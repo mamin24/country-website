@@ -1,0 +1,284 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight:400;
+    line-height: 1.5;
+    color: black;
+    background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.8em 0;
+    text-align: center;
+    font-size:2rem;
+}
+
+p {
+	margin: 0.5em 0em 1em;
+    margin:auto;
+    line-height: 1.5em;
+}
+
+a{
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+	color:#000000;
+    background-color: green;
+
+}
+
+.site-header{
+    display:flex;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: lightgoldenrodyellow;
+    margin: 0;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+/* favicon */
+/* ........... */
+
+.site-nav{
+    display:flex;
+    align-items: center;
+    padding: 0;
+    z-index: 20;
+    justify-content: center;
+}
+
+.site-nav ul{
+    list-style-type:none;
+    margin: 0;
+    padding:0;
+    z-index: 30;
+}
+
+.site-nav li{
+    display:inline-block;
+    align-items: center;
+    font-size: 0.75rem;
+    
+}
+
+.nav-links a{
+    text-decoration: none;
+    padding: 0.75rem;
+}
+
+
+@media (min-width:50em){
+    .site-nav{
+        justify-content: center;
+        align-items: center;
+        padding:0em;
+    }
+
+    .site-nav li{
+        font-size: 1.5em;
+        padding:0em 1.1em;
+
+    }
+
+    /* .favicon{
+        width: 5em;
+    } */
+}
+
+.banner {
+    position:relative;
+
+}
+
+.banner {
+    position:relative;
+
+}
+.banner h1 {
+    position: absolute;
+    top: 30%;
+	left: 0;
+	right: 0;
+    margin: 0 0.1em;
+	font-size: 2em;
+	color: black;
+	text-transform: uppercase;
+    font-weight: 500;
+	text-align: center;
+    backdrop-filter: blur(5px);
+    
+
+} 
+
+.banner img,
+.banner video {
+    display: block;
+    object-fit: cover;
+    min-height: 25em;
+    
+    width: 100%;
+    height: 90vh;
+
+}
+
+@media (min-width:65.6em){
+    .banner h1{
+        font-size: 4em;
+    }
+    .banner p{
+        font-size: 1.3em;
+    }
+}
+
+/* Home page 
+---------------------------------------------- */
+.quote {
+    display:flex;
+    justify-content: center;
+    margin:5rem 0 5rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+@media (min-width:50em){
+    .quote{
+        font-size: 1.5em;
+        margin: 2em;
+        line-height: 3em;
+        padding: 0;
+    }
+}
+
+/* Gallery
+--------------------------------------------- */
+.gallery {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:1rem;
+    margin:3rem;
+}
+
+.gallery-piece {
+    padding: 1rem;
+}
+
+.gallery img {
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width:43.75em) {
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+/* Food
+--------------------------------------------- */
+
+.food-section{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 3rem;
+    padding-bottom: 5rem;
+    justify-content: center;
+  
+}
+
+.food-item{
+    
+    padding: 1rem;
+    object-fit: contain;
+}
+.food-item img{
+    justify-self: center;
+    width: 100%;
+}
+
+@media(min-width:50em){
+    .food-section{
+       grid-template-columns: repeat(2, 30rem);
+       gap: 10rem;
+   }
+
+
+   .food-section img{
+    height: 80%;
+    object-fit: cover;
+   }
+}
+
+/* Credits */
+
+table{
+    border: 1px solid #c4c4c4;
+    text-align:center;
+    width: 75%;
+    margin: 0 auto;
+}
+th{
+    background-color: #c4c4c4;
+    color:#000000;
+    text-align: center;
+}
+
+tr td{
+    border: 1px solid #c4c4c4; 
+}
+
+
+.contact {
+    background-color: lightslategray;
+    margin: 2rem 15rem;
+
+}
+.contact input, textarea {
+    
+        border: none;
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 1rem;
+        outline: 0;
+        padding: 10px;
+        width: 100%;
+        background-color: #e8eeef;
+        border: 3px solid #e8eeef;
+        color: #000000;
+    
+}
+
+input[type="submit"] {
+    background-color: lightgreen;
+    
+}
+
+
+
+
+
+/* Footer
+--------------------------------------------- */
+footer {
+    background-color: lightgoldenrodyellow;
+    color: black;
+    text-align: center;
+    padding: 1em 0;
+    
+    bottom: 0;
+    width: 20rem;
+}
+
+@media (min-width: 50em) {
+    footer {
+        width: 100%;
+		position: relative;
+    }
+}
