@@ -36,7 +36,7 @@ a{
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: lightgoldenrodyellow;
+    background-color: skyblue;
     margin: 0;
     padding: 1rem;
     flex-direction: column;
@@ -44,6 +44,13 @@ a{
 
 /* favicon */
 /* ........... */
+
+.favicon{
+    align-self: center;
+    width:2em;
+    padding: 0;
+    margin: 1em;
+}
 
 .site-nav{
     display:flex;
@@ -86,9 +93,10 @@ a{
 
     }
 
-    /* .favicon{
+    .favicon{
+        align-self: flex-start;
         width: 5em;
-    } */
+    }
 }
 
 .banner {
