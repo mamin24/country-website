@@ -27,7 +27,7 @@ a{
 
 .nav-links a:hover {
 	color:#000000;
-    background-color: green;
+    background-color: white;
 
 }
 
@@ -244,14 +244,16 @@ tr td{
 
 
 .contact {
-    background-color: lightslategray;
-    margin: 2rem 15rem;
+    background-color:#c4c4c4;
+   
+    margin: auto;
+    padding: 1rem;
 
 }
 .contact input, textarea {
     
         border: none;
-        font-size: 16px;
+        font-size: 4px;
         height: auto;
         margin-bottom: 1rem;
         outline: 0;
@@ -263,9 +265,21 @@ tr td{
     
 }
 
+
 input[type="submit"] {
     background-color: lightgreen;
+    /* margin: 2rem 15rem; */
+    width: 200px;
     
+}
+
+@media (min-width: 50em) {
+    .contact {
+        margin: 2rem 15rem;
+    }
+    .contact input, textarea {
+        font-size: 16px;
+    } 
 }
 
 
@@ -275,7 +289,7 @@ input[type="submit"] {
 /* Footer
 --------------------------------------------- */
 footer {
-    background-color: lightgoldenrodyellow;
+    background-color: skyblue;
     color: black;
     text-align: center;
     padding: 1em 0;
